@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/fontawesome/all.min.css">
+    <link rel="stylesheet" href="wow.js/css/libs/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/slider.js"></script>
+    <script src='wow.js/dist/wow.min.js'></script>
+    <title>IT Conference</title>
+</head>
+
+<body>
+    <section class="mainPage">
+        <div class="topMenu">
+            <nav id='menu' class='default'>
+                <div class="logo">
+                    <a href=".main"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="links">
+                    <a href=".program">Програма</a>
+                    <a href=".speak">Спікери</a>
+                    <a href=".registration">Реєстрація</a>
+                    <ul>
+                        <li id="login">
+                            <a id="login-trigger" href="#">
+                                Кабінет<span id='log'></span>
+                            </a>
+                            <!-- Login btn-->
+                            <div id="login-content">
+                                <form>
+                                    <fieldset id="inputs">
+                                        <input id="username" type="email" name="Email" placeholder="Логін" required>
+                                        <input id="password" type="password" name="Password" placeholder="Пароль" required>
+                                    </fieldset>
+                                    <fieldset id="actions">
+                                        <input type="submit" id="submit" value="Log in">
+                                        <label><input type="checkbox" checked="checked">Keep me signed in</label>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href=".location">Контакти</a>
+                </div>
+            </nav>
+        </div>
+        <div class="menuplace">
+            <div class="wrapper">
+                <div class="main">
+                    <div class="leftbar wow slideInRight">
+                        <h1>
+                            Наукова-практична конференція молодих учених<br>
+                            </h1>
+                        <p>"Актуальні проблеми інформаційних технологій"</p>
+                        <button class='btn'><a href=".registration">Зареєструватися</a></button>
+                    </div>
+
+                    <div class="rightbar wow slideInLeft">
+                        <div class="formidle">
+                            <div class="date">
+                                <i class="far fa-calendar-alt"></i>17 січня 2019
+                            </div>
+                            <div class="time">
+                                <i class="far fa-clock"></i>9:00 - 18:00
+                            </div>
+                            <div class="place">
+                                <i class="fas fa-map-marker-alt"></i>вул. Богдана Гаврилишина, 24
+                            </div>
+                            <div class="facebook">
+                                <i class="fab fa-facebook"></i><a href="#">Facebook event page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="programaconf">
+        <div class="wrapper wow slideInRight">
+            <div class="program wow slideInUp">
+                <h3 id="programma">Программа конференції</h3>
+                <div class="line" id='prog'></div>
+                <div class="flexContainer">
+                    <!-- Mobile version of programm-->
+                    <div class="mobileProg">
+                        <span>9:00-10:00</span>
+                        <p>Практичне використання ІТ технологій в реалізації комплаєнс програм або плану протидії корпоративному шахрайству</p>
+                        <span>10:00-11:30</span>
+                        <p>Розумне рішення для виявлення порушень з етики та їх вирішення без помилок</p>
+                        <span>11:30-13:00</span>
+                        <p>Користь аналітики в протидії шахрайству</p>
+                        <span>13:00-13:30</span>
+                        <p>Кава-брейк</p>
+                        <span>13:30-15:00</span>
+                        <p>«Розумна» бюрократія або яким чином автоматизація бізнес-процесів допомагає виконанню комплаєнс функції?</p>
+                        <span>15:00-16:30</span>
+                        <p>Профілактика зловживань автоматизацією інвентаризації</p>
+                        <span>16:30-18:00</span>
+                        <p>Підведення підсумків</p>
+                    </div>
+                    <!-- ===========================-->
+                    <div class="timeBlock">
+                        <a href="#block1" class="active">9:00-10:00</a>
+                        <a href="#block2" class="">10:00-11:30</a>
+                        <a href="#block3" class="">11:30-13:00</a>
+                        <a href="#block4" class="">13:00-13:30</a>
+                        <a href="#block5" class="">13:30-15:00</a>
+                        <a href="#block6" class="">15:00-16:30</a>
+                        <a href="#block7" class="">16:30-18:00</a>
+                    </div>
+                    <div class="articleBlock">
+                        <div id='block1' class=" active">
+                            <img src="img/hacker.jpg" alt="">
+                            <p>Практичне використання ІТ технологій в реалізації комплаєнс програм або плану протидії корпоративному шахрайству</p>
+                        </div>
+                        <div id="block2">
+                            <img src="img/solutions.jpg" alt="">
+                            <p>Розумне рішення для виявлення порушень з етики та їх вирішення без помилок</p>
+                        </div>
+                        <div id="block3">
+                            <img src="img/analitysc.png" alt="">
+                            <p>Користь аналітики в протидії шахрайству</p>
+                        </div>
+                        <div id="block4">
+                            <img src="img/coffee.jpg" alt="">
+                            <p>Кава-брейк</p>
+                        </div>
+                        <div id="block5">
+                            <img src="img/automat.jpg" alt="">
+                            <p>«Розумна» бюрократія або яким чином автоматизація бізнес-процесів допомагає виконанню комплаєнс функції?</p>
+                        </div>
+                        <div id="block6">
+                            <img src="img/mind.jpg" alt="">
+                            <p>Профілактика зловживань автоматизацією інвентаризації</p>
+                        </div>
+                        <div id="block7">
+                            <img src="img/conc.png" alt="">
+                            <p>Підведення підсумків</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttonplace">
+                    <button class='btn' id='under_text'><a href=".registration">Зареєструватися</a></button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="speakers">
+        <div class="wrapper wow slideInLeft">
+            <h3 class="speak">Спікери</h3>
+            <div class="line" id="sp_line"></div>
+            <div id="block-for-slider">
+                <div id="viewport">
+                    <ul id="slidewrapper">
+                        <li class="slide">
+                            <div class="speaker">
+                                <img class="ava" src="img/ava.jpg" alt="">
+                                <h4>Іван Радченко</h4>
+                                <p id="prof">Доктор технічних наук</p>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Voluptatem eligendi obcaecati quisquam tempore<br> fugit nisi iure commodi quasi illum. Facere asperiores eaque, ad vel.<br> Placeat provident debitis similique facilis totam.</div>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="speaker">
+                                <img class="ava" src="img/ava.jpg" alt="">
+                                <h4>Олександр Труш</h4>
+                                <p id="prof">Master of Data Science</p>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Voluptatem eligendi obcaecati quisquam tempore<br> fugit nisi iure commodi quasi illum. Facere asperiores eaque, ad vel.<br> Placeat provident debitis similique facilis totam.</div>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="speaker">
+                                <img class="ava" src="img/ava.jpg" alt="">
+                                <h4>Олег Вінник</h4>
+                                <p id="prof">Master of Data Science</p>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Voluptatem eligendi obcaecati quisquam tempore<br> fugit nisi iure commodi quasi illum. Facere asperiores eaque, ad vel.<br> Placeat provident debitis similique facilis totam.</div>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="speaker">
+                                <img class="ava" src="img/ava.jpg" alt="">
+                                <h4>Валерій Міладзе</h4>
+                                <p id="prof">Master of Data Science</p>
+                                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Voluptatem eligendi obcaecati quisquam tempore<br> fugit nisi iure commodi quasi illum. Facere asperiores eaque, ad vel.<br> Placeat provident debitis similique facilis totam.</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div id="prev-next-btns">
+                        <div id="prev-btn"><i class="fas fa-arrow-circle-left"></i></div>
+                        <div id="next-btn"><i class="fas fa-arrow-circle-right"></i></div>
+                    </div>
+
+                    <ul id="nav-btns">
+                        <li class="slide-nav-btn"></li>
+                        <li class="slide-nav-btn"></li>
+                        <li class="slide-nav-btn"></li>
+                        <li class="slide-nav-btn"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="registration">
+        <form action="action_page.php" method="post">
+            <div class="wrapper reg wow slideInRight">
+                <h3>Анкета участника</h3>
+                <div class="line" id='prog'></div>
+                <p>Будь-ласка, заповність цю форму для участі у конференції.</p>
+                <hr>
+                <label for="lname"><b>Прізвище</b></label>
+                <input type="text" placeholder="Ваше прізвище" name="lastName" required>
+
+                <label for="fname"><b>Ім'я</b></label>
+                <input type="text" placeholder="Ваше ім'я" name="firstName" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Ваш email" name="email" required>
+
+                <label for="psw"><b>Пароль</b></label>
+                <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                <label for="psw-repeat"><b>Повторіть пароль</b></label>
+                <input type="password" placeholder="Введіть пароль" name="psw2" required>
+                <hr>
+                <p>Натискаючи на цю кнопку ви погоджуетесь із нашими <a href="#">Terms & Privacy</a>.</p>
+
+                <button type="submit" class="registerbtn" onclick="alert('Дякуємо, Ви успішно зареєстувалися! Чекайте повідомлення на вашу поштову скриньку!');">Відправити</button>
+            </div>
+
+            <div class="container signin">
+                <p>Вже зареєстровані? <a href="#" class="enter">Увійти</a>.</p>
+            </div>
+        </form>
+    </section>
+    <section class="mapsplace  wow lightSpeedIn">
+
+        <h3 id='location'>Ми чекаємо на <span id='loca'>тебе!</span></h3>
+        <div class="line" id='prog'></div>
+        <div class="contcon">
+            <div class="location">
+                <div class="contacts">
+                    <h4>17 січня 2019</h4>
+                    <p>Факультет Інформаційних технологій КНУ,<br> вулиця Богдана Гаврилишина, 24, Київ</p>
+                    <address>+38 044 393 5834<br>
+                        info@ethicontrol.com</address>
+                </div>
+                <div class="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d804.4840752754365!2d30.473866720988063!3d50.45548328379381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce80bb14c36b%3A0xb7c9ce92050fa29!2z0KTQsNC60YPQu9GM0YLQtdGCINC40L3RhNC-0YDQvNCw0YbQuNC-0L3QvdC40YUg0YLQtdGF0L3QvtC70L7Qs9C40Lkg0JrQndCjINC40LwuINCY0LvRjNC4INCd0LDQudC00LXQvdC60L4!5e0!3m2!1sru!2sua!4v1571242786066!5m2!1sru!2sua" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class='btnup' id="toTop"><i class="fas fa-arrow-alt-circle-up"></i><i id="top">^</i></button>
+    <footer class="footer">
+        <text>© Copyright. All Rights Reserved</text>
+    </footer>
+
+    <!--Activate wow.js-->
+    <script>
+        new WOW().init();
+
+    </script>
+</body>
+
+</html>
